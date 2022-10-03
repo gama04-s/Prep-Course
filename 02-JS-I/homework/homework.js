@@ -202,28 +202,29 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numer>0)
+  if(numero>0)
     {
-      return "Es positivo";
+      o="Es positivo"
+      return o ;
     }
     else if( numero < 0)
     {
-      return "Es negativo";
+      p="Es negativo";
+      return p ;
     }
     else if(numero == 0)
     {
       return false;
     }
-  
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  p="str";
+  
   o="!"
-  union=p+o;
+  union=str+o;
   return union;
 }
 
@@ -240,7 +241,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  saludar= "Hola"+ " "+nombre;
+  saludar= "Hola"+ " "+nombre +"!";
   return saludar;
   
 }
@@ -287,7 +288,35 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+tamaño= letra.length;
+var a,e,i,o,u;
+letras="letras"
+a="a";e="e";i="i";o="o";u="u";
+  if(tamaño === 1 && typeof (letra)==typeof(letras) ){
+  switch(letra){
+    case a:
+      return "Es vocal";
+      break;
+    case e:
+      return "Es vocal";
+      break;
+    case i:
+      return "Es vocal";
+      break;
+    case o:
+      return "Es vocal";
+      break;
+    case u:
+      return "Es vocal";
+      break;
+    default:
+      return "Dato incorrecto";
+      break;
+  }
+  }
+  else{
+    return "Dato incorrecto";
+  }
 
 }
 
